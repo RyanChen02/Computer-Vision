@@ -1,4 +1,4 @@
-Computer-Vision 
+##Computer-Vision 
 
 • Explore the theory behind Computer Vision with Python.
 
