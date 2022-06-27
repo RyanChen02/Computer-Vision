@@ -18,6 +18,7 @@ cap = cv2.VideoCapture(0)
 pTime = 0
 
 
+#definiting hand and gesture variables through while and if statement 
 while True:
     success, img = cap.read()
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -41,12 +42,14 @@ while True:
                 cv2.circle(img, (cx, cy), 5, (300, 0, 300), cv2.FILE_NODE_FLOAT)
             mpDraw_hands.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
 
-
+            
+#returning cpu processing time of module's running
     cTime = time.time()
     fps = 1 / (cTime - pTime)
     pTime = cTime
 
 
+#setting image's frame
     cv2.putText(img, str(int(fps)), (100, 150), cv2.FONT_HERSHEY_PLAIN, 3,
                 (300, 0, 0), 3)
     cv2.imshow("Pose_Recognition_Module 2", img)
