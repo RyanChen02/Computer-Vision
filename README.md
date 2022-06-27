@@ -1,6 +1,5 @@
-# Computer-Vision-
-Discovering Computer Vision
+Computer-Vision 
 
-• Developed a friendly user interface for recording and tracking event information, such as attendance, food distribution, volunteer list and event setting program.
+• Explore the theory behind Computer Vision with Python.
 
-• Utilized MySQL as a source database to connect GUI to track the database.
+• Utilized Hand Recognition, Gesture Recognition and Video Recognition.
